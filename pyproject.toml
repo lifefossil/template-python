@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "template-python"
+version = "0.1.0"
+description = "搭建 Python 基本项目脚手架模板"
+authors = ["oliver <lifefossil@outlook.com>"]
+readme = "README.md"
+packages =[
+    {include="src"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
