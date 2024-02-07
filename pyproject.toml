@@ -4,15 +4,33 @@ version = "0.1.0"
 description = "搭建 Python 基本项目脚手架模板"
 authors = ["oliver <lifefossil@outlook.com>"]
 readme = "README.md"
+repository = "http://git.ainnor.com:10880/oliver/template-python.git"
 packages =[
     {include="src"}
 ]
 
+[tool.poetry.scripts]
+codegen = 'src.main:start'
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
+
+# 测试依赖组
+[tool.poetry.group.test.dependencies]
 pytest = "^8.0.0"
 
+# pytest 配置
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = ["-v", "-s", "--import-mode=importlib"]
+
+# 日志配置
+[logging]
+enable_file_log = false
+file_log_location = "."
+
+[project]
+debug = false
 
 [build-system]
 requires = ["poetry-core"]
