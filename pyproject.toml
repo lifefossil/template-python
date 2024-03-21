@@ -6,11 +6,8 @@ authors = ["oliver <lifefossil@outlook.com>"]
 readme = "README.md"
 repository = "http://git.ainnor.com:10880/oliver/template-python.git"
 packages =[
-    {include="src"}
+    {include="projectname"}
 ]
-
-[tool.poetry.scripts]
-codegen = 'src.main:start'
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"

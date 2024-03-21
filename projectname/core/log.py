@@ -1,5 +1,5 @@
 import logging
-from src.core.params import pyproject_toml_params
+from projectname.core.params import pyproject_toml_params
 
 """
 Python logging 模块, 主要包括四个组件:
