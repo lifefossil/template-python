@@ -2,11 +2,10 @@
 name = "template-python"
 version = "0.1.0"
 description = "搭建 Python 基本项目脚手架模板"
-authors = ["oliver <lifefossil@outlook.com>"]
+authors = [""]
 readme = "README.md"
-repository = "http://git.ainnor.com:10880/oliver/template-python.git"
-packages =[
-    {include="projectname"}
+packages = [
+    {include = "projectname"}
 ]
 
 [tool.poetry.dependencies]
